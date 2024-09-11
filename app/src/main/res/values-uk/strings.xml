@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лабораторна 2</string>
+    <string name="portrait_key">Книжкова</string>
+    <string name="landscape_key">Альбомна</string>
+
+    <string-array name="some_test_array">
+        <item>Тест Один</item>
+        <item>Тест Два</item>
+        <item>Тест Три</item>
+    </string-array>
+
+    <string-array name="not_some_test_array">
+        <item>Не Тест Один</item>
+        <item>Не Тест Два</item>
+        <item>Не Тест Три</item>
+    </string-array>
+
+    <string name="menu_one">Кнопка Один</string>
+    <string name="menu_two">Кнопка Два</string>
+    <string name="menu_three">Кнопка Три</string>
+    <string name="menu_four">Кнопка Чотири</string>
+
+</resources>

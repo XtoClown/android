@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">lr_two</string>
+    <string name="portrait_key">Portrait</string>
+    <string name="landscape_key">Landscape</string>
+
+    <string-array name="some_test_array">
+        <item>Test One</item>
+        <item>Test Two</item>
+        <item>Test Three</item>
+    </string-array>
+
+    <string-array name="not_some_test_array">
+        <item>Not Test One</item>
+        <item>Not Test Two</item>
+        <item>Not Test Three</item>
+    </string-array>
+
+    <string name="menu_one">Button One</string>
+    <string name="menu_two">Button Two</string>
+    <string name="menu_three">Button Three</string>
+    <string name="menu_four">Button Four</string>
+
+</resources>
