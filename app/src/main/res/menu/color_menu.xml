@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_black" android:title="Black"/>
+        <item android:id="@+id/nav_white" android:title="White"/>
+        <item android:id="@+id/nav_khaki" android:title="Khaki"/>
+        <item android:id="@+id/nav_indigo" android:title="Indigo"/>
+        <item android:id="@+id/nav_crimson" android:title="Crimson"/>
+        <item android:id="@+id/nav_turquoise" android:title="Turquoise"/>
+        <item android:id="@+id/nav_brown" android:title="Brown"/>
+        <item android:id="@+id/nav_ocean" android:title="Ocean"/>
+        <item android:id="@+id/nav_gray" android:title="Gray"/>
+    </group>
+</menu>
