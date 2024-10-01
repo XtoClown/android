@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById<TextView>(R.id.text1)
         registerForContextMenu(textView)
 
-        val textView1: TextView = findViewById(R.id.textView1)
+        val textView1: TextView = findViewById(R.id.textView)
 
         textView1.setOnClickListener{
             val dialog = CustomDialogFragment()

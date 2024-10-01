@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="5"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="0.5">
+
+    <TextView android:layout_column="4"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+
+    <TextView
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+    <TextView
+        android:layout_gravity="fill"
+        android:layout_column="4"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/khaki"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="A"/>
+
+
+</GridLayout>

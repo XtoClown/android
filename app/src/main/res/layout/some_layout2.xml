@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout1"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/khaki" />
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/ocean"
+        android:layout_toRightOf="@id/relativeLayoutTextView1"
+        android:layout_below="@id/relativeLayoutTextView1"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_alignEnd="@id/relativeLayoutTextView2"
+        android:layout_below="@id/relativeLayoutTextView2"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/crimson"
+        android:layout_alignBaseline="@id/relativeLayoutTextView3"
+        android:layout_toEndOf="@id/relativeLayoutTextView3"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/turquoise"
+        android:layout_alignBottom="@id/relativeLayoutTextView1"
+        android:layout_alignEnd="@id/relativeLayoutTextView4"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/brown"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/indigo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/relativeLayoutTextView8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/gray"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -22,16 +22,23 @@ class MainActivity2 : AppCompatActivity() {
             insets
         }
 
-        val img1: ImageView = findViewById(R.id.imageView1)
-        val img2: ImageView = findViewById(R.id.imageView2)
+        val textView1 = findViewById<TextView>(R.id.textView1)
+        val textView2 = findViewById<TextView>(R.id.textView2)
+        val textView3 = findViewById<TextView>(R.id.textView3)
+        val textView4 = findViewById<TextView>(R.id.textView4)
+        val textView5 = findViewById<TextView>(R.id.textView5)
+        val textView6 = findViewById<TextView>(R.id.textView6)
+        val textView7 = findViewById<TextView>(R.id.textView7)
+        val textView8 = findViewById<TextView>(R.id.textView8)
+        val textView9 = findViewById<TextView>(R.id.textView9)
 
-        img1.setOnClickListener{
-            img2.visibility = View.VISIBLE
-            img1.visibility = View.GONE
-        }
-        img2.setOnClickListener{
-            img1.visibility = View.VISIBLE
-            img2.visibility = View.GONE
+        val textViewArray = arrayOf(textView1, textView2, textView3, textView4, textView5,
+            textView6, textView7, textView8, textView9)
+        for(item in textViewArray){
+            item.setOnClickListener {
+                val intent = Intent(this, MainActivity3::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
