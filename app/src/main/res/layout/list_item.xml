@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/processorName"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:hint="Processor Name"
+        android:gravity="center"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="28dp"
+        app:layout_constraintLeft_toRightOf="@id/processorId"
+        app:layout_constraintRight_toLeftOf="@id/processorCompany"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/processorId"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/processorName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/processorCompany"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:hint="Company"
+        android:gravity="center"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="28dp"
+        app:layout_constraintLeft_toRightOf="@id/processorName"
+        app:layout_constraintRight_toLeftOf="@id/processorSocket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/processorSocket"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:hint="Socket"
+        android:gravity="center"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="28dp"
+        app:layout_constraintLeft_toRightOf="@id/processorCompany"
+        app:layout_constraintRight_toLeftOf="@id/updateDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/updateDate"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Upd"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="455dp"
+        app:layout_constraintLeft_toRightOf="@id/processorSocket"
+        app:layout_constraintRight_toLeftOf="@id/removeDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/removeDate"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Rem"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="453dp"
+        app:layout_constraintLeft_toRightOf="@id/updateDate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
