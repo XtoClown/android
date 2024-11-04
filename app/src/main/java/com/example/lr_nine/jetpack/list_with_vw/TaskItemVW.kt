@@ -28,16 +28,12 @@ fun TaskItem(
     expanded: Boolean,
     onClick: () -> Unit
 ){
+    TopicRow(
+        topic = taskName,
+        expanded = expanded,
+        onClick = onClick
+    )
     Row(modifier = modifier, verticalAlignment = Alignment.CenterVertically){
-        TopicRow(
-            topic = taskName,
-            expanded = expanded,
-            onClick = onClick
-        )
-        Text(
-            modifier = Modifier.weight(1f).padding(start = 16.dp),
-            text = taskName
-        )
         Checkbox(
             checked = checked.value,
             onCheckedChange = onCheckedChange
