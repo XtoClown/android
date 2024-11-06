@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun TopicRow(topic: String, expanded: Boolean, onClick: () -> Unit){
+fun TopicRow(topic: String, description: String, expanded: Boolean, onClick: () -> Unit){
     TopicRowSpacer(visible = expanded)
     Surface ( modifier = Modifier.fillMaxWidth(), elevation = 2.dp, onClick = onClick ){
         Column ( modifier = Modifier.width(20.dp).padding(16.dp).animateContentSize() ){
@@ -42,7 +42,7 @@ fun TopicRow(topic: String, expanded: Boolean, onClick: () -> Unit){
             if(expanded){
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = topic,
+                    text = description,
                     textAlign = TextAlign.Justify
                 )
             }

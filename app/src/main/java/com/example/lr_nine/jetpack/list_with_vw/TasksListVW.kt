@@ -24,6 +24,7 @@ fun TasksList(
             var expanded by rememberSaveable { mutableStateOf(false) }
             TaskItem(
                 taskName = task.label,
+                description =  task.description,
                 checked = task.checked,
                 onCheckedChange = { checked -> onCheckedTask(task, checked) },
                 onClose = { onCloseTask(task) },

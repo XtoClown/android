@@ -1,21 +1,20 @@
 package com.example.lr_nine
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.Button
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.lr_nine.jetpack.list_default.LaboratoryTaskScreen
-import com.example.lr_nine.jetpack.list_with_vw.TaskScreen
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Surface {
-                TaskScreen(context = this)
+                LaboratoryTaskScreen(context = this)
             }
         }
     }
