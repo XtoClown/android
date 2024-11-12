@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <string name="value1">Value One</string>
+    <string name="value2">Value Two</string>
+    
+    <string-array name="currency_items">
+        <item>USA Dollar</item>
+        <item>Euro</item>
+        <item>Swiss Franc</item>
+        <item>British Pound</item>
+        <item>Japanese Yen</item>
+        <item>Canadian Dollar</item>
+        <item>Australian Dollar</item>
+        <item>Ukrainian Hryvnia</item>
+        <item>Polish Zloty</item>
+        <item>Chinese Yuan</item>
+    </string-array>
+</resources>

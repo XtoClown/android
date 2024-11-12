@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Конвертер Валют</string>
+
+    <string name="value1">Значення Один</string>
+    <string name="value2">Значення Два</string>
+
+    <string-array name="currency_items">
+        <item>Долар США</item>
+        <item>Євро</item>
+        <item>Швейцарьский Франк</item>
+        <item>Британський Фунт</item>
+        <item>Японська Єна</item>
+        <item>Канадський Долар</item>
+        <item>Австралійський Долар</item>
+        <item>Українська Гривня</item>
+        <item>Польский Злотий</item>
+        <item>Китайський Юань</item>
+    </string-array>
+</resources>

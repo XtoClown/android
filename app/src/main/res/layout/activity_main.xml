@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedede"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/dropdownFrom"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/inputFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:popupTheme="@style/DropdownMenuStyle" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputFrom"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="@string/value1"
+        android:paddingStart="15dp"
+        android:textSize="30dp"
+        android:background="#d6d6d6"
+        android:textColorHint="#949292"
+        android:textColor="#525252"
+        app:layout_constraintBottom_toTopOf="@+id/inputTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputTo"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="@string/value2"
+        android:paddingStart="15dp"
+        android:textColorHint="#949292"
+        android:textColor="#525252"
+        android:background="#d6d6d6"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Spinner
+        android:id="@+id/dropdownTo"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#ebebeb"
+        app:layout_constraintBottom_toTopOf="@+id/inputTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#666666"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
