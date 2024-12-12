@@ -28,8 +28,8 @@ interface SocketDao {
     @Update
     fun update(vararg sockets: Socket)
 
-    @Delete
-    fun delete(socket: Socket)
+    @Query("DELETE FROM Socket WHERE socketName == :socketName")
+    fun delete(socketName: String)
 
     @Query("DELETE from Socket")
     fun deleteAll()

@@ -80,7 +80,7 @@ class dataBaseCRUD : AppCompatActivity(), ProcessorAdapter.IUpdateRemove, Socket
             val processorName = enteredProcessorName.text.toString()
             val processorSocket = enteredProcessorSocket.text.toString()
 
-            val processor = Processor(pid = 0, processorName = processorName, processorSocketName = processorSocket)
+            val processor = Processor(processorName = processorName, processorSocketName = processorSocket)
 
             val job = scopeIO.launch {
                 processorDao?.insert(processor)
@@ -157,7 +157,7 @@ class dataBaseCRUD : AppCompatActivity(), ProcessorAdapter.IUpdateRemove, Socket
         val job = scopeIO.launch {
             socketDao?.update(updatedSocket)
             withContext(Dispatchers.Main) {
-                val index = sockets.indexOfFirst { it.socketName == socketCompany }
+                val index = sockets.indexOfFirst { it.socketName == socketName }
                 if (index != -1) {
                     sockets[index] = updatedSocket
                     socketAdapter?.notifyDataSetChanged()
@@ -173,9 +173,9 @@ class dataBaseCRUD : AppCompatActivity(), ProcessorAdapter.IUpdateRemove, Socket
         val scopeIO = CoroutineScope(Job() + Dispatchers.IO)
 
         val job = scopeIO.launch {
-            socketDao?.delete(removedSocket)
+            socketDao?.delete(socketName)
             withContext(Dispatchers.Main) {
-                val index = sockets.indexOfFirst { it.socketName == socketCompany }
+                val index = sockets.indexOfFirst { it.socketName == socketName }
                 if (index != -1) {
                     sockets.remove(removedSocket)
                     socketAdapter?.notifyDataSetChanged()
